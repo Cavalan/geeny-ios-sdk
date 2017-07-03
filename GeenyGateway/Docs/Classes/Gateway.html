@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gateway Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Gateway" class="dashAnchor"></a>
+    <a title="Gateway Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Geeny Gateway SDK Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Geeny Gateway SDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Gateway Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Facade.html">Facade</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Gateway.html">Gateway</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Model.html">Model</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Thing.html">Thing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ThingInfo.html">ThingInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CharacteristicInfo.html">CharacteristicInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CharacteristicProperties.html">CharacteristicProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GeenyThingInfo.html">GeenyThingInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Bluetooth LE.html">Bluetooth LE</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ScanError.html">ScanError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Bluetooth LE.html#/s:12GeenyGateway15ScanResultBlocka">ScanResultBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Bluetooth LE.html#/s:12GeenyGateway15GATTResultBlocka">GATTResultBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Errors.html">Errors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/GatewayError.html">GatewayError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/APIError.html">APIError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Enums.html">Other Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CharacteristicWriteType.html">CharacteristicWriteType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MQTTError.html">MQTTError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MQTTStatus.html">MQTTStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ThingFamily.html">ThingFamily</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Gateway</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Gateway</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The entrance point of the Geeny Gateway SDK.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@GeenyGateway@objc(cs)Gateway(cpy)shared"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@GeenyGateway@objc(cs)Gateway(cpy)shared">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a shared singleton Gateway object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span> <span class="o">=</span> <span class="kt">Gateway</span><span class="p">(</span><span class="nv">tokenManager</span><span class="p">:</span> <span class="kt">RESTTokenManager</span><span class="p">(),</span> <span class="nv">centralManager</span><span class="p">:</span> <span class="kt">CBCentralManager</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <a href="#/Initialization">
+                  <h3 class="section-name">Initialization</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@GeenyGateway@objc(cs)Gateway(im)setUp"></a>
+                    <a name="//apple_ref/swift/Method/setUp()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@GeenyGateway@objc(cs)Gateway(im)setUp">setUp()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize the Gateway SDK with the given configuration options (coming later).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUp</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Authentication"></a>
+                <a name="//apple_ref/swift/Section/Authentication" class="dashAnchor"></a>
+                <a href="#/Authentication">
+                  <h3 class="section-name">Authentication</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@GeenyGateway@objc(cs)Gateway(py)isLoggedIn"></a>
+                    <a name="//apple_ref/swift/Property/isLoggedIn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@GeenyGateway@objc(cs)Gateway(py)isLoggedIn">isLoggedIn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return whether the user is logged in into Geeny. Technically it returns
+whether the access token is stored.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLoggedIn</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C5loginySS8username_SS8passwordyAA6ResultOySbGc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/login(username:password:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C5loginySS8username_SS8passwordyAA6ResultOySbGc10completiontF">login(username:password:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perform login into Geeny with the given username and password. When finished,
+the completion block will be called with a boolean true for success,
+or an error describing the cause.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">LoginResultBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The username to log in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The password to log in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block for boolean true or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@GeenyGateway@objc(cs)Gateway(im)logout"></a>
+                    <a name="//apple_ref/swift/Method/logout()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@GeenyGateway@objc(cs)Gateway(im)logout">logout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Manually log out. Technically it deletes the locally stored tokens.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Discovery"></a>
+                <a name="//apple_ref/swift/Section/Discovery" class="dashAnchor"></a>
+                <a href="#/Discovery">
+                  <h3 class="section-name">Discovery</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C13scanForThingsySd7timeout_Sb04onlyA6NativeSb014omitRegisteredE0yAA6ResultOySayAA9ThingInfoVGGc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/scanForThings(timeout:onlyGeenyNative:omitRegisteredThings:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C13scanForThingsySd7timeout_Sb04onlyA6NativeSb014omitRegisteredE0yAA6ResultOySayAA9ThingInfoVGGc10completiontF">scanForThings(timeout:onlyGeenyNative:omitRegisteredThings:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scan for nearby Bluetooth LE things for the given time period. When the timer
+runs out, the completion block will be called with either the metadata of
+the detected things (<code><a href="../Structs/ThingInfo.html">ThingInfo</a></code>), or a <code><a href="../Enums/ScanError.html">ScanError</a></code> object.</p>
+
+<p>This method handles the <code>CBCentralManager</code> initialization automatically.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">scanForThings</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">,</span> <span class="nv">onlyGeenyNative</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">omitRegisteredThings</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Bluetooth LE.html#/s:12GeenyGateway15ScanResultBlocka">ScanResultBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specifies how long the scan should last. Default is 2 seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onlyGeenyNative</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows to filter the list of found things to include only Geeny native ones. Default is false.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>omitRegisteredThings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows to omit the registered things from the list of scanned things. Default is false.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block for the <code>[ThingInfo]</code> result or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C33connectAndDiscoverCharacteristicsSo8ProgressCAA9ThingInfoV3for_yAA6ResultOyAHGc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/connectAndDiscoverCharacteristics(for:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C33connectAndDiscoverCharacteristicsSo8ProgressCAA9ThingInfoV3for_yAA6ResultOyAHGc10completiontF">connectAndDiscoverCharacteristics(for:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect to peripheral and discover characteristics for a <em>ThingInfo</em> including Geeny-specific
+information as <code><a href="../Structs/GeenyThingInfo.html">GeenyThingInfo</a></code>.
+The process can be cancelled via the Progress return value.
+The completion block is always called, with either an updated <em>ThingInfo</em> instance or
+an error.</p>
+
+<p>This method handles the <code>CBCentralManager</code> initialization automatically.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectAndDiscoverCharacteristics</span><span class="p">(</span><span class="k">for</span> <span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">ThingInfoBlock</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Progress</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>ThingInfo</code> instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block with an updated <code>ThingInfo</code> result or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Registering%20Things"></a>
+                <a name="//apple_ref/swift/Section/Registering Things" class="dashAnchor"></a>
+                <a href="#/Registering%20Things">
+                  <h3 class="section-name">Registering Things</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C13registerThingySS13userGivenName_AA0D4InfoV05thingH0yAA6ResultOyAA0D0CGc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/registerThing(userGivenName:thingInfo:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C13registerThingySS13userGivenName_AA0D4InfoV05thingH0yAA6ResultOyAA0D0CGc10completiontF">registerThing(userGivenName:thingInfo:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register the thing given its <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code> representation on the Geeny Cloud.
+Currently only the <q>simple flow</q> is used: the Thing must be Geeny-native,
+and its ThingType must be pre-registered on the Geeny Cloud.</p>
+
+<p>After successful registration, the certificates are also obtained,
+which will be used for further MQTT communications.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerThing</span><span class="p">(</span><span class="nv">userGivenName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">RegisterResultBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userGivenName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name given by the user to identify the thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a Thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block with a <code>Thing</code> object result or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C11updateThingyAA0D4InfoV4with_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateThing(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C11updateThingyAA0D4InfoV4with_tF">updateThing(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update a Thing given its <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code>.</p>
+
+<p>It updates the thingInfo in the corresponding thing,
+and persits the changes in the thingRegistrar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateThing</span><span class="p">(</span><span class="n">with</span> <span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Containing the updated information about a thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C16registeredThingsyyAA6ResultOySayAA9ThingInfoVGGc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/registeredThings(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C16registeredThingsyyAA6ResultOySayAA9ThingInfoVGGc10completion_tF">registeredThings(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve all registered Things as an array of <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code> instances.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registeredThings</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Bluetooth LE.html#/s:12GeenyGateway15ScanResultBlocka">ScanResultBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block for the <code>[ThingInfo]</code> result or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C15registeredThingyAA0D4InfoV05thingE0_yAA0D0CSgc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/registeredThing(thingInfo:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C15registeredThingyAA0D4InfoV05thingE0_yAA0D0CSgc10completiontF">registeredThing(thingInfo:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve a registered thing given its <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code> representation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registeredThing</span><span class="p">(</span><span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">ThingBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a Thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block with a <code>Thing</code> object result or error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C17isThingRegisteredSbAA0D4InfoV05thingF0_tF"></a>
+                    <a name="//apple_ref/swift/Method/isThingRegistered(thingInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C17isThingRegisteredSbAA0D4InfoV05thingF0_tF">isThingRegistered(thingInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Queries whether the thing, represented by the given <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code>,
+is registered on the Geeny Cloud. This only checks the locally cached
+state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isThingRegistered</span><span class="p">(</span><span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a Thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GeenyGateway0B0C16isThingConnectedSbAA0D4InfoV05thingF0_tF"></a>
+                    <a name="//apple_ref/swift/Method/isThingConnected(thingInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GeenyGateway0B0C16isThingConnectedSbAA0D4InfoV05thingF0_tF">isThingConnected(thingInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Queries whether the thing, represented by the given <code><a href="../Structs/ThingInfo.html">ThingInfo</a></code>,
+is connected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isThingConnected</span><span class="p">(</span><span class="nv">thingInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/ThingInfo.html">ThingInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>thingInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a Thing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Debugging"></a>
+                <a name="//apple_ref/swift/Section/Debugging" class="dashAnchor"></a>
+                <a href="#/Debugging">
+                  <h3 class="section-name">Debugging</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@GeenyGateway@objc(cs)Gateway(im)debug_reset"></a>
+                    <a name="//apple_ref/swift/Method/debug_reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@GeenyGateway@objc(cs)Gateway(im)debug_reset">debug_reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the internal cache of Geeny Gateway SDK. This method must only be used for
+debugging purposes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">debug_reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/geeny/geeny-ios-sdk" target="_blank" rel="external">Geeny B2D team</a>. All rights reserved. (Last updated: 2017-09-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

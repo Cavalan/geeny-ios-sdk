@@ -1,0 +1,73 @@
+PODS:
+  - GeenyGateway (0.1.0):
+    - KeychainSwift (~> 8.0)
+    - Moscapsule
+    - RxCocoa
+    - RxSwift
+  - KeychainSwift (8.0.2)
+  - MBProgressHUD (1.0.0)
+  - Moscapsule (0.6.1)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - OHHTTPStubs/Swift (6.0.0):
+    - OHHTTPStubs/Default
+  - OpenSSL-Universal (1.0.2.10)
+  - RxCocoa (4.0.0-alpha.0):
+    - RxSwift (~> 4.0.0-alpha.0)
+  - RxSwift (4.0.0-alpha.0)
+
+DEPENDENCIES:
+  - GeenyGateway (from `./`)
+  - KeychainSwift (~> 8.0)
+  - MBProgressHUD (= 1.0.0)
+  - Moscapsule (from `https://github.com/geeny/Moscapsule.git`)
+  - OHHTTPStubs/Swift (= 6.0.0)
+  - OpenSSL-Universal (= 1.0.2.10)
+  - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
+
+EXTERNAL SOURCES:
+  GeenyGateway:
+    :path: ./
+  Moscapsule:
+    :git: https://github.com/geeny/Moscapsule.git
+  RxCocoa:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+CHECKOUT OPTIONS:
+  Moscapsule:
+    :commit: a1840a8f51e87eeb55f2c93ef0af51c7bd53b231
+    :git: https://github.com/geeny/Moscapsule.git
+  RxCocoa:
+    :commit: 318aa90bca6f88f721e8b1a653e9ba999b970abe
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :commit: 318aa90bca6f88f721e8b1a653e9ba999b970abe
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+SPEC CHECKSUMS:
+  GeenyGateway: da3dc8582dcb852bbc1e2c98739d2d9c1702285e
+  KeychainSwift: 213db04dfe7244988e61f77c72a2afb2f775954a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Moscapsule: c987aec17bc76f018e1079020c5fb50a69e6e807
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
+  OpenSSL-Universal: 6dc366764e8bf6ca93c60bd767d9103146a3b3b6
+  RxCocoa: d57cc4a5b88c5179b3ca7fe30d0ab0d928e886ff
+  RxSwift: 6946957e4e99243ea7c9bba38afa06b1363b0048
+
+PODFILE CHECKSUM: 80f02631093ded90973852579c38099c5453e994
+
+COCOAPODS: 1.3.1

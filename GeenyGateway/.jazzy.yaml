@@ -1,0 +1,26 @@
+module: Geeny Gateway SDK
+output: Docs
+xcodebuild_arguments: [-workspace, ../Geeny-iOS-SDK.xcworkspace, -scheme, GeenyGateway]
+podspec: ../GeenyGateway.podspec
+
+custom_categories:
+  - name: Facade
+    children:
+    - Gateway
+    - Result
+  - name: Model
+    children:
+    - Thing
+    - ThingInfo
+    - CharacteristicInfo
+    - CharacteristicProperties
+    - GeenyThingInfo
+  - name: Bluetooth LE
+    children:
+    - ScanError
+    - ScanResultBlock
+    - GATTResultBlock
+  - name: Errors
+    children:
+    - GatewayError
+    - APIError
